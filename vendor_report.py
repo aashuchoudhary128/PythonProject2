@@ -1,4 +1,3 @@
-
 vendor_name = input("Enter Vendor Name: ")
 year = input("Enter Year of Association: ")
 contact = input("Enter Contact Number: ")
