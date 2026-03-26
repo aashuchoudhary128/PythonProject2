@@ -5,11 +5,11 @@ companies = ['Microsoft', 'Google', 'Amazon', 'IBM',
 
 recruitment = [1200,1500,1800,1000,900,1100,700]
 
-plt.bar(companies, recruitment)
+plt.pie(recruitment, labels=companies, autopct='%1.1f%%')
 
-plt.title('Company Recruitment')
-plt.xlabel('Company')
-plt.ylabel('Employees')
+centre_circle = plt.Circle((0, 0), 0.70, fc='white')
+fig = plt.gcf()
+fig.gca().add_artist(centre_circle)
 
-plt.xticks(rotation=30)
+plt.title('Doughnut Chart')
 plt.show()

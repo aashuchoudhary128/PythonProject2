@@ -5,11 +5,10 @@ companies = ['Microsoft', 'Google', 'Amazon', 'IBM',
 
 recruitment = [1200,1500,1800,1000,900,1100,700]
 
-plt.bar(companies, recruitment)
+explode = [0,0.1,0,0,0,0,0]
 
-plt.title('Company Recruitment')
-plt.xlabel('Company')
-plt.ylabel('Employees')
+plt.pie(recruitment, labels=companies, autopct='%1.1f%%',
+        explode=explode, shadow=True)
 
-plt.xticks(rotation=30)
+plt.title('Customized Pie Chart')
 plt.show()
